@@ -114,6 +114,8 @@ h4 {
 .nav-list .link:focus,
 .contact-list .link:hover,
 .contact-list .link:focus {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
   color: var(--accent-color);
 }
 
@@ -160,6 +162,8 @@ h4 {
 
 .site-nav.link:hover,
 .site-nav.link:focus {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
   color: var(--accent-color);
 }
 
@@ -359,6 +363,8 @@ ul {
 
 .a:hover,
 .a:focus {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 2000ms;
   fill: #ffffff;
   background: var(--accent-color);
   border-radius: 50%;
@@ -412,6 +418,8 @@ ul {
 }
 
 .clients-icon:hover {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
 }
@@ -431,6 +439,8 @@ ul {
 
 .icon-compan:hover,
 .icon-compan:focus {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
   fill: var(--accent-color);
 }
 
@@ -465,6 +475,8 @@ ul {
 
 .button:hover,
 .button:focus {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
   color: var(--white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -496,6 +508,8 @@ ul {
 
 .projects li:hover,
 .projects li:focus {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -605,4 +619,66 @@ footer a {
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
   fill: #ffffff;
+}
+
+/*                                modal-section */
+
+.modal-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  padding-top: 221px;
+  padding-bottom: 222px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.modal-window {
+  width: 582px;
+  height: 581px;
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.modal-window button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  /* width: 30px; */
+  height: 30px;
+
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.button-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close {
+  background: #ffffff;
+}
+
+.is-hidden {
+  /* position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden; */
+  clip-path: inset(100%);
 }
