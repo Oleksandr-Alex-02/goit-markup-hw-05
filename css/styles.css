@@ -557,6 +557,20 @@ a {
   text-decoration: none;
 }
 
+.text-blok {
+  padding: 63px 24px;
+  background-color: var(--accent-color);
+}
+
+.transition {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
 .blok {
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
@@ -582,7 +596,7 @@ a {
   color: var(--secondary-text-color);
 }
 
-.projects p {
+.projects-p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
